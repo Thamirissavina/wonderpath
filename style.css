@@ -1,0 +1,32 @@
+th,td{
+  border: 2px solid black;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient(rgb(241, 38, 11) , rgb(248, 244, 10), rgb(10, 173, 248) );
+  height: 112vh;
+}
+
+.wonder{
+  float: right;
+  font-size: 80px;
+  margin-top: 300px;
+  margin-right: 200px;
+}
+
+.menu{
+  padding: 3px;
+  border-bottom: 1px solid rgba(212, 211, 211, 0.363);
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  float: right;
+}
