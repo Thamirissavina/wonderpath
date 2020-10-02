@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+  <title>WonderPath</title>
+
+<style>
+ th,td{
+  border: 2px solid black;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient(rgb(240,208,5), rgb(240,38,45), rgb(108,152,240),rgb(10,61,163), rgb(0, 0, 0) );
+  height: 112vh;
+}
+
+
+.wonder{
+  float: right;
+  font-size: 80px;
+  margin-top: 300px;
+  margin-right: 200px;
+}
+
+.menu{
+  padding: 3px;
+  border-bottom: 1px solid rgba(212, 211, 211, 0.363);
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 25px;
+  float: right;
+  right: 0;
+  position: absolute;
+}
+
+footer {
+  background-color:black;
+  bottom: 0;
+  width: 100%;
+}
+
+.fofo {
+  position: relative;
+  bottom: 0;
+  right: 0;
+  float: right;
+}
+
+.logo{
+  height:3.5cm;
+  width:3.5cm;
+}
+
+</style>
+
+</head>
+<body>
+    <h1 class="wonder">Wonder Women</h1>
+    <h2 class="menu"> Menu <img class ='logo' src = 'imgs/logo.png'/></h2>
+    <table  cellpadding="50">
+      <tr>
+        <th colspan="2" ></th>
+        <th></th>
+        <th rowspan="2"></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2" ></td>
+      </tr>
+       <tr>
+        <td></td>
+        <td></td>
+      </tr>
+      <tr><td></td></tr>
+    </table>
+    <footer ><img class="fofo" src = 'imgs/footercuted.png'/></footer>
+  
+  
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  <script>
+  const element = document.querySelector('h1');
+
+  (function typeWriter(element){
+  'use strict'
+  const elementText = element.innerHTML.split('')
+
+  element.innerHTML= ''
+
+  elementText.forEach((letter, i) => {
+
+    setTimeout(function() {
+      element.innerHTML += letter;
+
+    }, 100*i)
+  })
+  }(element))    
+  </script>
+</body>
+</html>
