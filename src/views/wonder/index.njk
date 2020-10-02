@@ -1,0 +1,111 @@
+{% extends "layout.njk" %}
+
+{% set title = "Wonderpath" %}
+
+{% block style %}
+<style>
+
+ th,td{
+  border: 2px solid black;
+}
+
+body{
+  margin: 0;
+  background: linear-gradient(rgb(241, 38, 11) , rgb(248, 244, 10), rgb(10, 173, 248) );
+  height: 112vh;
+}
+
+.wonder{
+  float: right;
+  font-size: 80px;
+  margin-top: 300px;
+  margin-right: 200px;
+}
+
+.menu{
+  padding: 3px;
+  border-bottom: 1px solid rgba(212, 211, 211, 0.363);
+  margin-left: 25px;
+  margin-right: 25px;
+  font-size: 25px;
+}
+
+footer {
+  background-color: #000;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  float: right;
+}
+
+
+.fofo {
+    bottom: 0;
+    right: 0;
+    float: right;
+    position: relative;
+}
+
+.logo{
+  height:3.5cm;
+  width:3.5cm;
+}
+
+</style>
+{% endblock %}
+
+{% block content %}
+  <h1 class="wonder">Wonder Women</h1>
+  <h2 class="menu"><img class ='logo' src = '../imgs/logo.png'/>  Menu</h2>
+    <table  cellpadding="50">
+      <tr>
+        <th colspan="2" ></th>
+        <th></th>
+        <th rowspan="2"></th>
+        <th></th>
+      </tr>
+      <tr>
+        <td></td>
+        <td></td>
+        <td></td>
+       
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td colspan="2"></td>
+      </tr>
+      <tr>
+        <td></td>
+        <td colspan="2" ></td>
+      </tr>
+       <tr>
+        <td></td>
+      </tr>
+  
+    </table>
+    <footer> <img class = "fofo" src = '../imgs/footercuted.png'/></footer>
+{% endblock %}
+
+{% block script %}
+<script>
+  const element = document.querySelector('h1');
+
+  (function typeWriter(element){
+  'use strict'
+  const elementText = element.innerHTML.split('')
+
+  element.innerHTML= ''
+
+  elementText.forEach((letter, i) => {
+
+    setTimeout(function() {
+      element.innerHTML += letter;
+
+    }, 100*i)
+  })
+  }(element))  
+</script>
+{% endblock %} 
